@@ -4,7 +4,7 @@ Put your terms and definitions below. If you have never used markdown for format
 ##Client
 
 ##Server
-
+A computer or computer network hosting particular information or data that is accessed by a client. 
 ##Tiered Architecture
 
 ###Presentation Tier
