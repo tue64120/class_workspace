@@ -1,0 +1,40 @@
+<html>
+<head>
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+    <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+</head>
+<body>
+  <strong>PHILLY CONSTRUCTION PROJECTS</strong>
+  
+  
+  <p>For many years, Philly is a city that has been considered the underdog when it comes to any field (be it sports, finance or entertainment). 
+  In recent years, though, this perception has been challenged. The city's real estate market, encouraged by an influx of new residents, has been booming. This newfound revitalization has positive implications for the city, suggesting a bright economic future.</p>
+  <div id='map' style="height:800px; width:1200px"></div>
+      <script>
+            var map = L.map('map').setView([39.952456, -75.163565], 13);
+            
+            L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+             attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+            
+            comcast = L.marker([39.955241,-75.170423]).addTo(map)
+            .bindPopup('<b>CITC</b> <small>Center City West</small><br> The Comcast Innovation and Technology Center is a skyscraper under construction. The 59-floor building, with a height of 342 m, will be the tallest building in the Western Hemisphere outside of Manhattan and Chicago. It will likely be complete by early 2018.');
+              
+            sls = L.marker([39.946752,-75.164491]).addTo(map)
+            .bindPopup('<font color="orange">SLS Lux</font> <small>Avenue of the Arts</small><br> Commissioned by Dranoff Properties, the 47 story tower broke ground in Spring of 2015. It will feature 125 condos and 150 hotel rooms, combining a four or five star hotel with uber-luxe condos and entertainment space.');
+            
+            temple = L.marker([39.981884,-75.154491]).addTo(map)
+            .bindPopup('<font color="red">TEMPLE LIBRARY</font> <small>Temple University</small><br> Constructed by Norweigan firm Snohetta, this building will serve as a library. The library will feature an automated book retrieval system. Construction is expected to begin soon, with an opening scheduled for Fall 2018.');
+            
+            fop = L.marker([39.951561,-75.156573]).addTo(map)
+            .bindPopup('<font color="brown">FOP</font> <small>Market East</small><br> The Gallery was long considered a dead mall. The Fashion Outlets of Philadelphia serves as a complete remodeling of this site in an effort to revitalize and attract retailers. The grand opening is expected sometime in 2017.');
+            
+            chop = L.marker([39.945156,-75.186156]).addTo(map)
+            .bindPopup('<font color="blue">CHOP SCHUYKILL PROJECT</font> <small>Southwest Center City</small><br> Childrens Hospital is planning to develop Schuylkill Avenue into office and research space over the next few decades. The first phase of this involves the erection of a 22-story office tower at the base of Bainbridge Street.');
+            
+            cira = L.marker([39.952453,-75.183081]).addTo(map)
+            .bindPopup('<font color="purple">CIRA SOUTH</font> <small>University City</small><br> This project is a complex of two skyscrapers, consisting of the commercial Cira Walnut Tower and the residential Cira Chestnut Tower. The Cira Chestnut tower is already complete.');
+            
+      </script>
+</body>
+</html>
